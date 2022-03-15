@@ -10,6 +10,12 @@
 header{
     height: 90px;
 }
+.fa-star{
+    font-size: 2rem;
+}
+#jumbotron h1{
+    font-size: 3rem;
+}
 .debug{
     border: 1px solid black;
 }
