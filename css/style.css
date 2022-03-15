@@ -1,0 +1,18 @@
+.bg_blue{
+    background-color: #2C3E50;
+}
+.bg_green{
+    background-color: #1ABC9C;
+}
+.bg_lightblue{
+    background-color: #3A546D;
+}
+header{
+    height: 90px;
+}
+.debug{
+    border: 1px solid black;
+}
+.height_debug{
+    height: 50px;
+}
