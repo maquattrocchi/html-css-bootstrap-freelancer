@@ -13,12 +13,21 @@ header{
 .fa-star{
     font-size: 2rem;
 }
+
 #jumbotron h1{
     font-size: 3rem;
 }
+.star_line{
+    width: 90px;
+    height: 5px;
+}
+footer p{
+    font-size: 1.4rem;
+}
+footer .col-3>div{
+    width: 45px;
+    height: 45px;
+}
 .debug{
     border: 1px solid black;
-}
-.height_debug{
-    height: 50px;
 }
