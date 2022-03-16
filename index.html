@@ -11,129 +11,190 @@
 </head>
 <body>
     <!-- header -->
-    <header class="bg_blue">
-
+    <header class="bg_blue py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container text-uppercase">
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
     </header>
     <!-- /header -->
     <!-- main -->
     <main>
         <!-- jumbotron -->
-        <section id="jumbotron" class="bg_green py-5 text-white text-uppercase">
-            <div class="container">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="col-6 col-lg-2 mb-3">
-                        <img src="img/avatar.svg" class="img-fluid" alt="avatar">
-                    </div>
-                    <div class="col mb-3">
-                        <h1>Start bootstrap</h1>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="bg-white star_line d-inline-block align-middle rounded-pill ms-1"></div>
-                        <i class="fa-solid fa-star align-middle"></i>
-                        <div class="bg-white star_line d-inline-block align-middle rounded-pill me-1"></div>
-                    </div>
-                    <div class="col">
-                        <h4>Graphic artist - web designer - illustrator</h4>
-                    </div>
-                </div>
+        <section id="jumbotron" class="bg_green py-5 text-uppercase">
+            <img src="img/avatar.svg" alt="avatar">
+            <h1>Start bootstrap</h1>
+            <div class="star_wrapper mb-4">
+                <i class="fa-solid fa-star align-middle"></i>
             </div>
+            <p>Graphic artist - web designer - illustrator</p>
         </section>
         <!-- portfolio -->
-        <section id="portfolio" class=" py-5">
-            <div class="container text-center text-uppercase">
-                <h1 class="mb-4">portfolio</h1>
-                <div class="mb-4">
-                    <div class="bg-dark star_line d-inline-block align-middle rounded-pill ms-1"></div>
+        <section id="portfolio" class="text-uppercase py-5">
+            <div class="container">
+                <h2 class="mb-4">Portfolio</h2>
+                <div class="star_wrapper star_dark mb-4">
                     <i class="fa-solid fa-star align-middle"></i>
-                    <div class="bg-dark star_line d-inline-block align-middle rounded-pill me-1"></div>
                 </div>
-                <div class="row gy-4 gx-4">
+                <div class="row gy-4">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/cabin.png" class="img-fluid" alt="cabin">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/cake.png" class="img-fluid" alt="cake">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/circus.png" class="img-fluid" alt="circus">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/game.png" class="img-fluid" alt="game">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/safe.png" class="img-fluid" alt="safe">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="img/cabin.png" class="img-fluid rounded-3" alt="cabin">
+                        <div class="img_wrapper position-relative">
+                            <img src="img/submarine.png" class="img-fluid" alt="submarine">
+                            <div class="img_change">
+                                <i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- about -->
         <section id="about" class="bg_green py-5">
-            <div class="container">
-                <div class="w-75 m-auto text-center text-white">
+            <div class="w-75 m-auto">
+                <div class="container-fluid">
                     <h1 class="text-uppercase mb-4">about</h1>
-                    <div class="mb-4">
-                        <div class="bg-white star_line d-inline-block align-middle rounded-pill ms-1"></div>
+                    <div class="star_wrapper mb-4">
                         <i class="fa-solid fa-star align-middle"></i>
-                        <div class="bg-white star_line d-inline-block align-middle rounded-pill me-1"></div>
                     </div>
-                    <div class="row text-start mb-4">
+                    <div class="row text-start gy-3">
                         <div class="col-12 col-md-6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, magni molestiae laborum excepturi natus animi autem accusantium impedit sunt vel rerum asperiores, laboriosam voluptas illo itaque modi nihil! Doloremque, nesciunt.</p>
+                            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for eaasy customization.</p>
                         </div>
                         <div class="col-12 col-md-6">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos obcaecati quam deleniti eum, facere voluptatem earum doloremque ratione tenetur expedita.</p>
+                            <p>Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download"></i> Download</button>
+                    <button type="button" class="btn btn-outline-light mt-4"><i class="fa-solid fa-download"></i> Download</button>
                 </div>
             </div>
         </section>
         <!-- contact -->
         <section id="contact" class="py-5">
-            <div class="container">
-                <div class="w-75 m-auto  text-center debug">
+            <div class="w-75 m-auto">
+                <div class="container-fluid">
                     <h1 class="text-uppercase mb-4">contact me</h1>
-                    <div class="mb-4">
-                        <div class="bg-dark star_line d-inline-block align-middle rounded-pill ms-1"></div>
+                    <div class="star_wrapper star_dark mb-4">
                         <i class="fa-solid fa-star align-middle"></i>
-                        <div class="bg-dark star_line d-inline-block align-middle rounded-pill me-1"></div>
                     </div>
+                    <form class="text-start fs-5">
+                        <div class="mb-3">
+                            <label for="name" class="form-label m-0">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label m-0">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-number" class="form-label m-0">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone-number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label m-0">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn bg_green text-white fs-5">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     <!-- /main -->
     <!-- footer -->
-    <footer class="text-white">
-            <div class="container-fluid py-5 bg_lightblue">
-                <div class="container">
-                    <div class="row text-center justify-content-center">
-                        <div class="col-12 col-md-4">
-                            <h3 class="text-uppercase">Location</h3>
-                            <p>2215 John Daniel Drive Clark, MO 5423</p>
+    <footer class="bg_blue">
+        <div id="footer_up" class="container-fluid py-5 bg_lightblue">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">Location</h3>
+                        <p>2215 John Daniel Drive Clark, MO 5423</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">Around the web</h3>
+                        <div class="cs_social me-1 position-relative">
+                            <i class="fa-brands fa-facebook-f position-absolute top-50 start-50 translate-middle"></i>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <h3 class="text-uppercase">Around the web</h3>
+                        <div class="cs_social mx-1 position-relative">
+                            <i class="fa-brands fa-google-plus-g position-absolute top-50 start-50 translate-middle"></i>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <h3 class="text-uppercase">About freelancer</h3>
-                            <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap</p>
+                        <div class="cs_social mx-1 position-relative">
+                            <i class="fa-brands fa-twitter position-absolute top-50 start-50 translate-middle"></i>
                         </div>
+                        <div class="cs_social ms-1 position-relative">
+                            <i class="fa-brands fa-linkedin-in position-absolute top-50 start-50 translate-middle"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h3 class="text-uppercase">About freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="text_green text-decoration-none">Start Bootstrap</a></p>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid py-5 bg_blue">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <p>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</p>
-                        </div>
-                    </div>
+        </div>
+        <div id="footer_down" class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</p>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- /footer -->
 </body>

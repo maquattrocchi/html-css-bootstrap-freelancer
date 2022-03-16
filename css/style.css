@@ -1,3 +1,6 @@
+.debug{
+    border: 1px solid black;
+}
 .bg_blue{
     background-color: #2C3E50;
 }
@@ -7,27 +10,83 @@
 .bg_lightblue{
     background-color: #3A546D;
 }
-header{
-    height: 90px;
+.text_green{
+    color: #1ABC9C;
 }
-.fa-star{
+header .navbar-brand{
     font-size: 2rem;
+    font-weight: bold;
 }
-
+header .nav-link{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+main, footer, .fa-plus{
+    color: white;
+    text-align: center;
+}
+#jumbotron img{
+    max-width: 250px;
+}
 #jumbotron h1{
     font-size: 3rem;
+    padding-top: 10px;
 }
-.star_line{
-    width: 90px;
-    height: 5px;
+#jumbotron p{
+    font-size: 24.5px;
 }
-footer p{
+h2{
+    font-size: 2.5rem;
+}
+p{
     font-size: 1.4rem;
 }
-footer .col-3>div{
-    width: 45px;
-    height: 45px;
+.star_wrapper .fa-star{
+    font-size: 2rem;
 }
-.debug{
-    border: 1px solid black;
+.star_wrapper:before, .star_wrapper:after{
+    content: '';
+    display: inline-block;
+    width: 90px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    vertical-align: middle;
 }
+.star_wrapper.star_dark:before, .star_wrapper.star_dark:after{
+    background-color: #2C3E50;
+}
+#portfolio, #contact{
+    color: #2C3E50;
+}
+#portfolio .img_wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+#portfolio .img_change{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.7);
+    font-size: 4.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#portfolio .img_wrapper:hover .img_change{
+    display: block;
+}
+#contact form .form-control{
+    border: none;
+    border-bottom: 1px solid grey !important;
+    border-radius: 0;
+}
+#footer_up .cs_social{
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
